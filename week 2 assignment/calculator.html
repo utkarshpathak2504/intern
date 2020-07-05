@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta  name="viewport" content="width=device-width , intitial-scale=1.0">
+    <meta http-equiv="X-UA-compatible"  content="ie-edge">
+    <title>CALCULATOR</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            align-items:center;
+            border: width 1px; ;
+            
+
+        }
+       .button{
+    text-align: center;
+           padding: 5px 10px;
+           border-radius: 10px;
+           margin: 2px 5px;
+       }
+       .main
+       {
+        align-items: center;
+       }
+     .center {
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+    </style>
+    <h2 style="text-align: center; color: blanchedalmond;" > CALCULATOR</h2>
+
+<script src="cal.js"></script>
+<body >
+
+</head>
+<body>
+<div class="main">
+    <form name="form">
+    <input class="input" name="input" >
+    </form>
+    <table class = "center">
+    <tr>
+        <td><input class="button" type="button" value="1" onclick="cal(1)"></td>
+        <td><input class="button" type="button" value="2" onclick="cal(2)"></td>
+        <td><input class="button" type="button" value="3" onclick="cal(3)"></td>
+        <td><input  class="button" type="button" value="+" onclick="cal('+')"></td>
+        </tr>
+        <tr>
+        <td><input  class="button" type="button" value="4" onclick="cal(4)"></td>
+        <td><input  class="button" type="button" value="5" onclick="cal(5)"></td>
+        <td><input  class="button" type="button" value="6" onclick="cal(6)"></td>
+        <td><input  class="button" type="button" value="-" onclick="cal('-')"></td>
+        </tr>
+    <tr>
+        <td><input  class="button" type="button" value="7" onclick="cal(7)"></td>
+        <td><input  class="button" type="button" value="8" onclick="cal(8)"></td>
+        <td><input  class="button" type="button" value="9" onclick="cal(9)"></td>
+        <td><input  class="button" type="button" value="*" onclick="cal('*')"></td>
+        </tr>
+    <tr>
+        <td><input  class="button" type="button" value="0" onclick="cal(0)"></td>
+        <td><input class="button"  type="button" value="/" onclick="cal('/')"></td>
+       
+        <td><input  class="button" type="button" value="&#8730" onclick="sqrt()"></td>
+        <td><input class="button"  type="button" value="c" onclick="clr( )"></td>
+        </tr>
+        <tr>
+        <td><input  class="button" type="button" value="." onclick="cal('.')"></td>
+        <td><input class="button"  type="button" value="%" onclick="cal('%')"></td>
+        <td><input class="button"  type="button" value="abs" onclick="abs()"></td>
+        <td colspan=2><input  class="button"  type="button" value="=" onclick="equal()"></td>
+        </tr>
+     </table>
+  </div>
+</body>
+</html>
